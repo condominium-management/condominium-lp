@@ -9,9 +9,9 @@ export default function Home() {
           <div className="bg-cover bg-no-repeat bg-center bg-[url('../public/hero.png')] h-[480px]">
             <div className="flex flex-col justify-between mt-12 p-16 gap-6">
               <h1 className="mt-24 font-extrabold text-[2.6rem] text-white leading-snug">
-                Eleve a gestão de contas do seus condomínio com a CondoFacil
+                Eleve a gestão de contas do seu condomínio com a CondoFacil
               </h1>
-              <span className="block text-white text-base leading-[1.6]">
+              <span className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] block text-white text-base leading-[1.6]">
                 Nossa plataforma digital simplifica a comunicação, a manutenção
                 e os pagamentos para que você possa se concentrar em criar uma
                 ótima experiência de vida.
