@@ -4,7 +4,7 @@ import "./globals.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["500"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <body className={"bg-[#f3f4f6] " + manrope.className}>{children}</body>
     </html>
   );
 }
