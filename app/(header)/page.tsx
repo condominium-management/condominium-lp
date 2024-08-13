@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../../public/logo.svg";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -12,16 +13,23 @@ export default function Header() {
           CondoFácil
         </p>
       </div>
-      <div className="flex gap-9">
+      <div className="hidden sm:flex gap-9">
         <div className="flex gap-9 pt-3">
-          <p className="cursor-pointer">Serviços</p>
-          <p className="cursor-pointer">Preços</p>
-          <p className="cursor-pointer">Recursos</p>
-          <p className="cursor-pointer">FAQ</p>
+          <Link href={"#services"}>
+            <p className="cursor-pointer">Serviços</p>
+          </Link>
+          <Link href={"#prices"}>
+            <p className="cursor-pointer">Preços</p>
+          </Link>
+          <Link href={"#"}>
+            <p className="cursor-pointer">FAQ</p>
+          </Link>
         </div>
-        <button className="text-white rounded-lg cursor-pointer bg-[#2B8FE3] pl-4 pr-4 pt-3 pb-3">
-          Sign In
-        </button>
+        <Link href={"#cta"}>
+          <button className="text-white rounded-lg cursor-pointer bg-[#2B8FE3] pl-4 pr-4 pt-3 pb-3">
+            Sign In
+          </button>
+        </Link>
       </div>
     </header>
   );

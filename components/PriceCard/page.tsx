@@ -23,7 +23,7 @@ export default function PriceCard({
   title,
 }: PriceCardProps) {
   return (
-    <div className="lg:w-1/2 rounded-lg my-10 p-6 border-solid border-2">
+    <div className="lg:w-1/2 rounded-lg mt-6 sm:my-10 p-6 border-solid border-2">
       <h3 className="text-base font-bold">{title}</h3>
       <p className="mt-2 font-extrabold text-4xl text-green-700">
         R${price.toFixed(2)}

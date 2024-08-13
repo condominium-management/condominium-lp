@@ -79,7 +79,7 @@ const priceCards: PriceCardProps[] = [
         isChecked: true,
       },
       {
-        description: "Acesso a todas features futuras",
+        description: "Acesso a todas novas features futuras",
         isChecked: true,
       },
     ],
@@ -90,55 +90,59 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="mt-1 mx-auto max-w-[960px]">
+      <div className="sm:mt-1 mx-auto max-w-[960px] my-[-1.25rem]">
         <main>
-          <section>
-            <div>
-              <div className="bg-cover bg-no-repeat bg-center bg-[url('../public/hero.png')] h-[40%]">
-                <div className="flex flex-col justify-between mt-12 lg:p-16 p-8 gap-6">
-                  <h1 className="mt-24 font- font-extrabold text-[2.6rem] text-white leading-snug">
-                    Eleve a gestão de contas do seu condomínio com a CondoFacil
-                  </h1>
-                  <span className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] block text-white text-base leading-[1.6]">
-                    Nossa plataforma digital simplifica a comunicação, a
-                    manutenção e os pagamentos para que você possa se concentrar
-                    em criar uma ótima experiência de vida.
-                  </span>
-                  <div className="flex mt-6 gap-6">
-                    <button className="text-white rounded-lg cursor-pointer bg-[#2B8FE3] py-4 px-3">
-                      Comece por aqui
-                    </button>
-                    <button className="rounded-lg cursor-pointer bg-[#F0F2F5] py-4 px-3">
-                      Saber mais
-                    </button>
-                  </div>
+          <section id="hero">
+            <div className="bg-cover bg-no-repeat bg-center bg-[url('../public/hero.png')] h-[40%]">
+              <div className="flex flex-col justify-between sm:mt-12 lg:p-16 pt-0 pb-8 px-8 gap-6">
+                <h1 className="mt-24 font-extrabold text-[2.6rem] text-white leading-snug">
+                  Eleve a gestão de contas do seu condomínio com a CondoFacil
+                </h1>
+                <span className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] block text-white text-base leading-[1.6]">
+                  Nossa plataforma digital simplifica a comunicação, a
+                  manutenção e os pagamentos para que você possa se concentrar
+                  em criar uma ótima experiência de vida.
+                </span>
+                <div className="flex mt-6 gap-6">
+                  <button className="text-white rounded-lg cursor-pointer bg-[#2B8FE3] py-4 px-3">
+                    Comece por aqui
+                  </button>
+                  <button className="rounded-lg cursor-pointer bg-[#F0F2F5] py-4 px-3">
+                    Saber mais
+                  </button>
                 </div>
               </div>
             </div>
           </section>
           <section className="my-10 m-4">
-            <h2 className="font-extrabold text-4xl text-[#121417]">
+            <h2 className=" font-extrabold text-4xl text-[#121417]">
               Como a CondoFácil funciona para você
             </h2>
-            <p className="mt-4 leading-[2] font-normal text-[#121417]">
+            <p className="mt-8 sm:mt-6 leading-[2] font-normal text-[#121417]">
               Nossa plataforma digital simplifica a comunicação, a manutenção e
               os pagamentos para que você possa se concentrar em criar uma ótima
               experiência de vida.
             </p>
           </section>
-          <section className="flex lg:flex-row flex-wrap mx-4 lg:justify-between justify-center gap-2">
+          <section
+            id="services"
+            className="flex lg:flex-row flex-wrap mx-4 lg:justify-between justify-center sm:gap-2 gap-12"
+          >
             {cards.map((card) => (
               <Card key={card.bgUrl.src} {...card} />
             ))}
           </section>
-          <section className="flex lg:flex-nowrap flex-wrap gap-4 justify-center">
+          <section
+            id="prices"
+            className="flex lg:flex-nowrap flex-wrap gap-4 justify-center"
+          >
             {priceCards.map((priceCard) => (
               <PriceCard {...priceCard} />
             ))}
           </section>
         </main>
 
-        <footer className="text-center justify-center pt-6 pb-14">
+        <footer id="cta" className="text-center justify-center pt-6 pb-14">
           <h3 className="font-extrabold text-4xl py-4">Informe seu e-mail</h3>
           <div className="flex justify-center mt-4">
             <input
