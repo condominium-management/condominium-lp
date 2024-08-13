@@ -1,5 +1,5 @@
 import Card, { CardProps } from "@/components/Card/page";
-import Header from "./(header)/page";
+import Header from "../components/Header/page";
 import card1 from "../public/assets/card1.png";
 import card2 from "../public/assets/card2.png";
 import card3 from "../public/assets/card3.png";
